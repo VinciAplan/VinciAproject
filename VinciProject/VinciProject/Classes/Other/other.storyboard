@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BMn-TF-PIs">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--其他-->
+        <scene sceneID="n0d-2N-jxz">
+            <objects>
+                <tableViewController id="p5m-cR-2Kr" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="1Rw-RQ-qnC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Lcm-tC-KQD">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lcm-tC-KQD" id="U7E-wp-L0i">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="p5m-cR-2Kr" id="7ME-xh-t3P"/>
+                            <outlet property="delegate" destination="p5m-cR-2Kr" id="N8q-g4-qmr"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="其他" id="WYW-HL-hRC"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Nm-gV-wW5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079" y="-62"/>
+        </scene>
+        <!--其它-->
+        <scene sceneID="5CN-2a-LXh">
+            <objects>
+                <navigationController id="BMn-TF-PIs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="其它" image="Icon_Order_Normal" selectedImage="Icon_Orders_Selected" id="TfH-Su-46w"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NEF-hu-btA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="p5m-cR-2Kr" kind="relationship" relationship="rootViewController" id="GQs-hR-AEd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ItX-Xc-was" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="259" y="-62"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon_Order_Normal" width="32" height="32"/>
+        <image name="Icon_Orders_Selected" width="32" height="32"/>
+    </resources>
+</document>
